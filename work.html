@@ -9,21 +9,171 @@
 
 <body>
 <div class="foreground">
-		<h1 class="title">Work</h1>
-		<div class="horizdeco"></div>
-		<div class="navbar">
-			<button><a href="index.html">About</a></button>
-			<span class="vertdeco"></span>
-			<button><a href="work.html">Work</a></button>
-			<span class="vertdeco"></span>
-			<button><a href="contact.html">Contact</a></button>
+	<h1 class="title">Work</h1>
+	<div class="horizdeco"></div>
+
+	<div class="navbar">
+		<button><a href="index.html">About</a></button>
+		<span class="vertdeco"></span>
+		<button><a href="work.html">Work</a></button>
+		<span class="vertdeco"></span>
+		<button><a href="contact.html">Contact</a></button>
+	</div>
+
+	<div class="environmentproject">
+	<h2>Environment Project</h2>
+
+
+	<div class="slideshow1container">
+
+		<div class="slidesFade fade">
+			
+			<video width="800" height="550" controls>
+				<source src="envirvideo.mp4" type="video/mp4">
+				<source src="envirvideo.ogg" type="video/ogg">
+				your browser does not support the video tag.
+			</video>
+			
 		</div>
-<h2>This is a video test</h2>
-<video width="320" height="240" controls autoplay>
-	<source src="dwalking.mp4" type="video/mp4">
-</video>
 
+		<div class="slidesFade fade">
+			
+			<img class="slidesize" src="beautscene1.PNG">
+			
+		</div>
 
-</div>
+		<div class="slidesFade fade">
+			
+			<img class="slidesize" src="xtrapic.PNG">
+			
+		</div>
 
+		<a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+
+		<div class="aligncenter">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+		<p>Created in Blender, this environment consists of five different plants, about ten different natural rock formations, and five man-made structures, including a long bridge connecting the two pillars!</p>
+
+	</div>
+
+	
+	<div class="slideshow1container2">
+	<h2 class="workspacing">Maya Animation Project</h2>
+		<div class="slidesFade2 fade">
+			
+			<video width="800" height="550" controls>
+				<source src="Proj1Sideview.m4v" type="video/mp4">
+				<source src="Proj1Sideview.mp4" type="video/mp4">
+				your browser does not support the video tag.
+			</video>
+			
+		</div>
+
+		<div class="slidesFade2 fade">
+			
+			<video width="800" height="550" controls>
+				<source src="Proj1Backview.m4v" type="video/mp4">
+				<source src="Proj1Backview.mp4" type="video/mp4">
+				your browser does not support the video tag.
+			</video>
+			
+		</div>
+
+		<div class="slidesFade2 fade">
+			
+			<img class="slidesize" src="proj1Scrn.png">
+			
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+
+		<div class="aligncenter">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+		<p>Made in Autodesk Maya, The animation shows a figure walking towards a heavy object, picking it up and placing it on a platform. </p>
+
+	</div>
+	<div class="mayaposing">
+	<h2 class="workspacing">Maya Posing</h2>
+	<img class="slidesize" src="posesfixed.png">
+	<p>Some action/movie poses created in Maya.</p>
+	</div>
+
+	<h2 class="workspacing">Other Projects and Designs</h2>
+	<div class="otherprojects">
+	<img class="flexpics" src="Beaut.png">
+	<img class="flexpics" src="anewman.png">
+	<img class="flexpics" src="anewerenv.png">
+	<img class="flexpics" src="house.png">
+	<img class="flexpics" src="kickgif.gif">
+	<img class="flexpics" src="carfinito.png">
+	<img class="flexpics" src="rollersnap.png">
+	<img class="flexpics" src="HAL 9000.png">
+	<img class="flexpics" src="colorchest.png">
+	<img class="flexpics" src="sombergif.gif">
+	<img class="flexpics" src="delver screenshot3.png">
+	<img class="flexpics" src="shield.jpg">
+	<img class="flexpics" src="pjct9SpacexMagazineAd.jpg">
+	<img class="flexpics" src="Helm.png">
+	<img class="flexpics" src="Reticle1.png">
+	<img class="flexpics" src="metroidscrnsht.png">
+	</div>
+	</div>
+	</div>
+	
+
+<div class="bottomBar">
+	
+	<div class="websitelinks">
+	<a class="flexlinks" href="https://app.netlify.com"><p>Netlify.com</p></a>
+	<a class="flexlinks" href="https://github.com"><p>GitHub.com</p></a>
+	<a class="flexlinks" href="https://www.figma.com/"><p>Figma.com</p></a>
+	</div>
+	<p>Created using Git and Microsoft Visual Studio - Published to Netlify through GitHub. Designs and planning done with Figma.</p>
+	</div>
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["slidesFade", "slidesFade2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+
+
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>

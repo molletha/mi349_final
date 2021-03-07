@@ -1,6 +1,6 @@
 body {
-	margin-left: 500px;
-	margin-right: 500px;
+	margin-left: 10px;
+	margin-right: 10px;
 	text-align: center;
 	background-color: rgb(10,10,10);
 	color: #EFEFEF;
@@ -20,14 +20,16 @@ body {
 p {
 	margin: 0px;
 	font-family: nobilereg;
+	
 }
 
 
 #frontpic {
-	height: 400px;
-	width: 700px;
+	height: 460px;
+	width: 850px;
 	margin-top: 5px;
 	border-radius: 2px;
+	box-shadow: 0 0 2px black;
 }
 
 h1 {
@@ -42,28 +44,38 @@ h1 {
 h2 {
 	margin-top: 8px;
 	font-family: nobilereg;
+	margin-bottom: 28px;
+}
+
+h2.workspacing {
+	margin-top: 40px;
+	margin-bottom: 0px;
 }
 
 #msulogo {
 	height: auto;
 	width: 75px;
-	margin-left: 10px;
+	margin-left: 15px;
 	float: left;
 }
 
 #columns {
 	display: flex;
-	margin-left: 30px;
-	margin-right: 30px;
-	padding-bottom: 10px;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 10px;
 	margin-top: 10px;
+	font-size: 20px;
+	
+
 }
 
 .maintext {
-	margin-left: 10px;
-	margin-right:10px;
+	margin-left: 30px;
+	margin-right:30px;
 	margin-top: 10px;
-	font-size: 110%;
+	font-size: 130%;
+	
 }
 
 .foreground {
@@ -71,17 +83,19 @@ h2 {
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 10px;
+	padding-bottom: 30px;
 }
 
 .picandsummary {
 	background-color: rgb(76,143,91);
 	padding-bottom: 45px;
 	margin-top: 5px;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 25%;
+	margin-right: 25%;
 	margin-bottom: 10px;
 	padding-top: 10px;
 	border-radius: 2px;
+	box-shadow: 0 0 2px white;
 }
 
 .Education {
@@ -92,13 +106,16 @@ h2 {
 	padding-left: 0px;
 	padding-right: 0px;
 	border-radius: 2px;
+	box-shadow: 0 0 2px white;
 }
 
 .furtherinfo {
 	background-color: rgb(115,115,115);
 	flex: 1 ;
 	margin-left: 5px;
+	padding-right: 4px;
 	border-radius: 2px;
+	box-shadow: 0 0 2px white;
 }
 
 
@@ -114,13 +131,18 @@ ul.logospacing {
 	margin-left: 120px;
 }
 
+li {
+	margin-bottom: 15px;
+}
 
 .navbar {
 	display: flex;
 	margin: auto;
 	width: 360px;
 	margin-top: 20px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
+	color: rgb(255,255,255);
+	text-decoration: none;
 }
 
 button {
@@ -170,8 +192,195 @@ a {
 	background-color: rgb(76,143,91);
 	margin-top: 5px;
 	margin-bottom: 5px;
-	margin-left: 30.5%;
+	margin-left: 40.7%;
 	border-radius: 50%;
 	box-shadow: 0px 0px 2px white;
 }
 
+* {box-sizing:border-box}
+
+.slideshow1container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.slidesFade {
+	display: none;
+	margin-bottom: 0;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -50px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: .4s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	margin-left: -400px;
+}
+
+.next {
+	right: 60px;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,.8);
+}
+
+
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: rgba(240,240,240);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color .4s ease;
+	margin-top: 12px;
+	margin-bottom: 15px;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1s;
+	animation-name: fade;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+.slidesize {
+	width: 800px;
+	height: 550px;
+	border-radius: 5px;
+}
+
+.environmentproject {
+	background-color: rgba(60,60,60);
+	border-radius: 5px;
+	margin-left: 28%;
+	margin-right: 28%;
+	padding-top: 8px;
+	padding-bottom: 18px;
+}
+
+.aligncenter {
+	background-color: rgb(60,60,60);
+	margin-top: -7px;
+	margin-left: 15px;
+	margin-right: 14px;
+}
+
+.socialmedialogo {
+	width: 60px;
+	height: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 4px;
+}
+
+.socialmedialogo:hover {
+	box-shadow: 0 0 3px;
+}
+
+.smlinks {
+	background-color: rgb(30,30,30);
+	padding: 10px;
+	margin-left: 20%;
+	margin-right: 20%
+}
+
+
+
+.resume {
+	flex: 1;
+	height: 700px;
+	width: 500px;
+	margin-left: 50px;
+	border-radius: 4px;
+}
+
+.contactColumns {
+	display: flex;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.contactInfo {
+	flex: 1;
+	margin-right: 50px;
+}
+
+.resume:hover {
+	box-shadow: 0 0 4px;
+}
+
+.bottomBar {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-size: 6px;
+	margin-bottom: 30px;
+}
+
+.resumeview {
+	margin-top: 50px;
+	width: 1000px;
+	height: 1600px;
+}
+
+.websitelinks {
+	display: flex;
+	padding-bottom: 20px;
+}
+
+.flexlinks {
+	flex: 1;
+	margin-left: -50px;
+	margin-right: -50px;
+}
+
+.slideshow1container2 {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.otherprojects {
+	display: flex;
+	margin-left: 10px;
+	flex-flow: wrap;
+	margin-top: 20px;
+}
+
+.flexpics {
+	width: 200px;
+	height: 200px;
+	border-radius: 6%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+		
+}
